@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>吃豆豆</title>
+ <style>
+ body{
+ background-color:#000;
+ }
+ .mouth{
+    margin-top:100px;
+	width:200px;
+	height:200px;
+	/*background-color:#ff3300;*/
+	border-radius:50%;
+    animation:peas 1s infinite;
+	/*box-shadow:
+	           300px 0px 0px -80px #66ff33,/*盒子影子 四个值 分别为X轴距离 Y轴距离 模糊度半径 影子盒子半径变化 颜色 */
+			   450px 0px 0px -80px #66ff33,
+			   600px 0px 0px -80px #66ff33,
+			   750px 0px 0px -80px #66ff33;*/
+ }
+ .top ,.bottom{
+	width:200px;
+	height:100px;
+	background-color:#ffff33;
+	margin-left:150px;
+}
+.top{
+	border-radius:100px 100px 0 0;
+	animation:top 1s linear infinite alternate;
+}
+ .bottom{
+	border-radius:0 0 100px 100px;
+	animation:bottom 1s  linear infinite alternate;
+}
+@keyframes top{
+0%{
+transform:rotate(0)
+}
+100%{
+transform:rotate(-30deg)
+}
+}
+@keyframes bottom{
+0%{
+transform:rotate(0)
+}
+100%{
+transform:rotate(30deg)
+}
+}
+@keyframes peas{
+0%{
+box-shadow:
+	           300px 0px 0px -80px #66ff33,
+			   450px 0px 0px -80px #66ff33,
+			   600px 0px 0px -80px #66ff33,
+			   750px 0px 0px -80px #66ff33;
+}
+100%{
+box-shadow:
+	           150px 0px 0px -80px #66ff33,
+			   300px 0px 0px -80px #66ff33,
+			   450px 0px 0px -80px #66ff33,
+			   600px 0px 0px -80px #66ff33;
+}
+}
+ </style>
+ </head>
+ <body>
+ <div class='mouth'>
+  <div class='top'></div>
+  <div class='bottom'></div>
+  </div>
+ </body>
+</html>
